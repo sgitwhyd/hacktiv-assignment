@@ -1,0 +1,53 @@
+.app-container {
+	width: 100%;
+	max-width: 1024px;
+	min-height: 100vh;
+	padding: 0 24px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.app-container > p a {
+	text-decoration: none;
+	color: white;
+}
+
+.app-container > p {
+	text-align: center;
+}
+
+.app-container > p a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.table-header {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+	table {
+		width: 50%;
+	}
+
+	.app-container {
+		padding: 0 84px;
+	}
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple Calculator</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				background-color: #f1f1f1;
+			}
+
+			.container {
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.kalkulator {
+				width: 400px;
+				height: 500px;
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			}
+
+			.display {
+				width: 100%;
+				height: 20%;
+				background-color: #f1f1f1;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				padding: 0 20px;
+				box-sizing: border-box;
+			}
+
+			.display input {
+				width: 100%;
+				height: 50px;
+				border: none;
+				font-size: 30px;
+				text-align: right;
+				outline: none;
+			}
+
+			.button-container {
+				width: 100%;
+				height: 80%;
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+			}
+
+			.big {
+				grid-column: 1 / span 2;
+			}
+
+			.big-row {
+				grid-row: span 2 / span 2;
+			}
+
+			.button-container button {
+				border: none;
+				outline: none;
+				font-size: 30px;
+				cursor: pointer;
+				transition: 0.3s;
+				border: 1px solid black;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.button-container button:hover {
+				background-color: #f1f1f1;
+			}
+
+			.operator {
+				background-color: #fff480;
+			}
+
+			.number {
+				background-color: #fff;
+			}
+
+			.operator:hover {
+				background-color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="kalkulator">
+				<div class="display">
+					<input type="text" name="display" id="display" disabled />
+				</div>
+				<div class="button-container">
+					<button class="operator" id="clear">AC</button>
+					<button class="operator" id="clear">CE</button>
+					<button class="operator" id="subtract">-</button>
+					<button class="operator" id="multiply">*</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="divide">/</button>
+
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="add">+</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator big-row" id="equals">=</button>
+					<button class="number big" id="0">0</button>
+
+					<button class="number" id="decimal">.</button>
+				</div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
