@@ -1,12 +1,9 @@
-import CounterClass from "./features/CounterClass";
-import Counter from "./features/Counter";
+import AuthLoginForm from "./features/AuthLoginForm";
 
 const App = () => {
 	return (
 		<div>
-			<Counter />
-			<hr />
-			<CounterClass />
+			<AuthLoginForm />
 		</div>
 	);
 };
