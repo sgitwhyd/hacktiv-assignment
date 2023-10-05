@@ -37,7 +37,7 @@ const App = () => {
 				<thead>
 					<tr>
 						<td>No</td>
-						<td>Name</td>
+						<td data-testid="name">Name</td>
 						<td>Action</td>
 					</tr>
 				</thead>
